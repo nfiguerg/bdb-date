@@ -7,13 +7,10 @@
           <label [class]="item.class + '__label--active'">{{item.label}}</label>
         </div>
         <div [class]="item.class + '__input'">
-          <input (input)="setFocus(item.id, item.maxlength, item.formControlName)" [id]="item.id" [maxlength]="item.maxlength" [formControlName]="item.formControlName" [placeholder]="item.placeholder" type="tel" [class]="item.class + '__input--active'">
-      /
-          
+          <input (input)="setFocus(item.id, item.maxlength, item.formControlName)" [id]="item.id" [maxlength]="item.maxlength" [formControlName]="item.formControlName"
+            [placeholder]="item.placeholder" type="tel" [class]="item.class + '__input--active'">
         </div>
-        
       </div>
-      
     </div>
   </form>
 </div>
