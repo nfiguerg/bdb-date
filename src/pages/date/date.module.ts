@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { DatePage } from './date';
-import { ComponentsModule } from '../../components/components.module';
+import { DateComponentModule } from '../../components/components.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     FormsModule,
     ReactiveFormsModule,
-    ComponentsModule,
+    DateComponentModule,
     BrowserModule,
     CommonModule,
     IonicPageModule.forChild(DatePage)

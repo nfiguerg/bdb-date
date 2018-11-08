@@ -8,4 +8,4 @@ import { CommonModule } from '@angular/common';
 	imports: [ReactiveFormsModule, BrowserModule, CommonModule],
 	exports: [DateComponent, ReactiveFormsModule, FormsModule]
 })
-export class ComponentsModule {}
+export class DateComponentModule {}
