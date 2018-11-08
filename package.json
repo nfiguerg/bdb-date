@@ -1,6 +1,6 @@
 {
   "name": "bdb-date",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
   "private": false,
@@ -15,7 +15,6 @@
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",
     "@angular/compiler-cli": "5.2.11",
-    "@angular/core": "5.2.11",
     "@angular/forms": "5.2.11",
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
@@ -36,5 +35,5 @@
     "@ionic/app-scripts": "3.2.0",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "Component date"
 }
