@@ -59,7 +59,7 @@ export class DateComponent {
       if (isNaN(control.value)){
         return 'Must be a number';
       }
-      if (Number(control.value) > 12 || Number(control.value) < 1) {
+      if (Number(control.value) > 12|| Number(control.value) < 1) {
         return 'Must be between 1 and 12';
       }
       return null;
@@ -75,8 +75,7 @@ export class DateComponent {
     }]
   })
   @Output() date = new EventEmitter<any>();
-  @Output() validDate = new  EventEmitter<boolean>();
-  @Input() rangeAge: string; // Range of available age e.g. '18-69' || '1-50'
+  @Output() validForm = new  EventEmitter<boolean>();
   @Input() callBackFormat: string;  // Have to be moment format read DOCS https://momentjs.com/
   @Input() // e.g. 'DDMMAAAA' 'AAAAMMDD' 'MMDDAAAA' 'MMAAAADD'
   set format(formatDate: string){
@@ -120,7 +119,7 @@ export class DateComponent {
     for (let index = 0; index < documents.length; index++) {
       if (documents[index].id === idInput && Number(limitCh) === Number(documents[index].value.length) && index < (documents.length - 1) && this.formDate.get(formControl).valid) {
           document.getElementById(documents[index + 1].id).focus();
-          this.validDate.emit(this.formDate.valid)
+          this.validForm.emit(this.formDate.valid)
           return;
       }
     }
